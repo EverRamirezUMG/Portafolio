@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+  
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    
+    
+</head>
+<body>
+    <!---------------------------------------------------------------------MENU ENCABEZADO--------------------------------------------------->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Ever</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!----------------------------------------------------------------------SECCION DE INICIO---------------------------------------------------->
+    <section id="inicio" class="inicio">
+        <div class="lineaV"></div>
+        <div class="graph">
+            <h1>44</h1>
+        </div>
+        <div class="contenido-banner">
+            
+            <div class="contenedor-img">
+               <a href="#sobremi"> <img src="./IMG/perfil1.jpg" alt=""></a>
+                <br>
+            </div>
+          <a href="#sobremi"> <h1>EVER RAMÍREZ</h1></a>
+            
+            <h2>2290-19-4463</h2>
+            <br>
+            
+            <h2>Estudiante de Ingeniería en sistemas</h2>
+            <br>
+            <h2>UMG Sololá</h2>
+            <br>
+            <br>
+            
+         <!--<div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>--> 
+           <a href="#portfolio"><img src="./IMG/LogoUMG.png" alt=""></a> 
+            
+        </div>
+   
+        <div class="graph">
+            <h1>63</h1>
+        </div>
+    </section>
+
+    <!-------------------------------------------------------------------------------SOBRE MI---------------------------------------------------------->
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p><span>Soy Ever Ramírez</span> Estudiante de Ingeniería en sistemas de la Universidad
+            Mariano Galvez de Guatemala, Soy una persona  con principios y valores morales, y altamente competitivo.
+            Me gusta destacar siempre entre los demás, simepre trato la manera de mejorar cada día.
+            
+            </p>
+                 <div class="fila">
+                    <!--Datos Personales-->
+                    <div class="col">
+                            <h3>Datos Personales</h3>
+                            <ul>
+                                <li>
+                                    <strong>Nombre</strong>
+                                    Ever José Ramírez Quic
+                                </li>
+                                
+                                <li>
+                                    <strong>Fecha de nacimiento</strong>
+                                    01/07/1999
+                                </li>
+                                <li>
+                                    <strong>Nacionalidad</strong>
+                                    Guatemala
+                                </li>
+                                
+                                <li>
+                                    <strong>Ocupacion</strong>
+                                    <span>Estudiante Universitario</span> 
+                                </li>
+                                <li>
+                                    <strong>Dirección</strong>
+                                    Santiago Atitlán, Sololá
+                                </li>
+                                
+                                <li>
+                                    <strong>Telefono</strong>
+                                    +502 4716 3611
+                                </li>
+                                <li>
+                                    <strong>Email</strong>
+                                    eramiezq2@miumg.edu.gt
+                                </li>
+                              
+                            </ul>
+                    </div>
+                    <!--INTERESES-->
+                    <dvi class="col">
+                            <h3>Intereses</h3>
+                            <div class="contenedor-intereses">
+                                
+                                <div class="interes">
+                                    <i class="fa-solid fa-camera"></i>
+                                    <span>Fotografia</span>
+                                </div>
+
+                                <div class="interes">
+                                    <i class="fa-solid fa-person-hiking"></i>
+                                    <span>Senderismo</span>
+                                </div>
+
+                                <div class="interes">
+                                    <i class="fa-solid fa-campground"></i>
+                                    <span>Camping</span>
+                                </div>
+                                
+                                <div class="interes">
+                                    <i class="fa-solid fa-moon"></i>
+                                    <span>Astronomía</span>
+                                </div>
+                            </div>
+                    </dvi>
+                 </div>
+                 <br>
+                 <br><br>
+                 <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                 </button>
+        </div>
+    </section>
+
+    
+    <!-----------------------------------------------HABILLIDADES----------------------------------------------------------->
+
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+
+                    <div class="skill">
+                        <span>C++</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>Oracle</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades profesionales</h3>
+
+
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>  
+
+
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------- SECCION CURRICULUM --------------------------------------------------->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+
+
+                    <div class="item izq">
+                        <h4>Ingeniería en sistemas</h4>
+                        <span class="casa">Universidad Mariano Galvez de Guatemala</span>
+                        <span class="fecha">2019 - Actualidad</span>
+                        <p>En el año 2019 empeze a estudiar ingenería en sistemas en la Universidad Mariano Gálvez de Guatemala sede 
+                            Sololá, con el objetivo de aprender como funciona la tecnologia y tener conocimientos sobre las ciencias de la 
+                            computación
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="item izq">
+                        <h4>Bachiller industrial y perito en Electronica</h4>
+                        <span class="casa">Liceo Bilingüe Cuauhtemallan</span>
+                        <span class="fecha">2015 - 2017</span>
+                        <p>En el año 2015 inicie mis estudios de nivel diversificado en el Liceo Tecnologico Bilingüe Cuauhtemallan de Sololá,
+                            con el fin de saber y entender como funcionan los dispositivos electronicos que forman parte de nuestro día a día, 
+                            en el año 2017 finalize con exito la carrera y obeniendo mi titulo de Bachiller industrial y perito en Electronica.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="item izq">
+                        <h4>Nivel Primario y Básico</h4>
+                        <span class="casa">Colegio Católico P. Apla´s</span>
+                        <span class="fecha">2006 - 2014</span>
+                        <p>
+                            Desde el año 2006 hasta el 2014 relice mis estudios de nivel primario y básico.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Técnico </h4>
+                        <span class="casa">Teleapostol Atitlán</span>
+                        <span class="fecha">2015 - 2022</span>
+                        <p>
+                            Desde el año 2012 forme parte como voluntario de este canal católico de televisión local, desde el 2016 empeze
+                            a colaborar como tecnico, brindando manteniniemto a las computadoras del canal, durante este tiempo aprendi
+                            muchas cosas y adquiri mucha experiencia en lo que es mantenimiento de computadoras y produccion audiovisual, 
+                            a finales del 2022 decidi darme de baja en el canal para seguir otras metas.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Técnico</h4>
+                        <span class="casa">Tecnibosinas la bendición</span>
+                        <span class="fecha">2020</span>
+                        <p>
+                            En este empleo tuvo una duración de 3 meses en la cual adquiri nuevos conocimientos de como se reparan consolas de sonido,
+                            en darle manteniniento a torres de bocinas y entre otras cosas, me dieron de baja por motivos de recorte de personal por la pandemia.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Práctica supervisada</h4>
+                        <span class="casa">Electronica Tuy</span>
+                        <span class="fecha">2017</span>
+                        <p>
+                            En el año 2017, realice mis prácticas supervisadas en el taller de electrónica TUY en el municipio de Sololá.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------------------------------------------- SECCION PORTFOLIO -------------------------------------------------->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORATFOLIO</h2>
+
+            <div class="galeria">
+
+                <a href="SistemaSolar.html">  
+                    <div class="proyecto">
+                   <img src="./IMG/Pryct1.png" alt="">
+                  <div class="overlay">
+                        <h3>Sistema Solar</h3>
+                        <p>C++</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="ElRancho.html">  
+                <div class="proyecto">
+                    <img src="./IMG/Pryct2.png" alt="">
+                    <div class="overlay">
+                        <h3>El Rancho</h3>
+                        <p>C#</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="Compilador.html">
+                <div class="proyecto">
+                    <img src="./IMG/Pryct3.png" alt="">
+                    <div class="overlay">
+                        <h3>Compilador</h3>
+                        <p>C#</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="Sysinfo.html">
+                <div class="proyecto">
+                    <img src="./IMG/Pryct4.png" alt="">
+                    <div class="overlay">
+                        <h3>Sysinfo</h3>
+                        <p>C#</p>
+                    </div>
+                </div>
+            </a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Santiago Atitlán, Sololá
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                +502 4716 3611
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                eramirezq2@miumg.edu.gt
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+         
+        </div>
+    </footer>
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>

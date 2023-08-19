@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Work+Sans:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa:wght@700&family=Work+Sans:wght@400;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /*permite deslizar al hacer click en los links en el menu*/
+    scroll-behavior: smooth;
+    min-width: 580px;
+}
+
+/*MENU*/
+.contenedor-header{
+    background: #1E1E1E;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    border-bottom: 5px solid rgba(0, 255, 255, 1);
+
+}
+.contenedor-header header{
+max-width: 1100px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 20px;
+
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Audiowide';
+    font-size: 36px;
+    color: #00FFFF;
+text-decoration: none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #00FFFF;
+}
+
+.nav-responsive{
+    background-color: #00FFFF;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* -------------------------------------------SECCION PORTFOLIO -------------------------------------------------*/
+.portfolio{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.portfolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'Audiowide';
+    text-align: center;
+    padding: 20px 0;
+}
+.portfolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    
+}
+.portfolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+
+
+.portfolio .contenido-seccion .definicion{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.portfolio .galeria .proyecto .descripcion{
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.portfolio  .git img{
+    margin-top: 300px;
+    margin-bottom: 400px;
+    border: 2px solid #00FFFF;
+    display: block;
+    width: 10%;
+    margin: auto;
+    border-radius: 100%;
+    transition: .5s;
+    
+}
+
+.portfolio .contenido-seccion .git :hover{
+  
+    border-radius: 100%;
+    border: 5px solid #bbffff;
+    box-shadow: 0 0 5px #0FF, 0 0 15px #0FF,0 0 30px #0FF,0 0 50px #0FF;
+    text-decoration: none;
+    transition: .3s;
+}
