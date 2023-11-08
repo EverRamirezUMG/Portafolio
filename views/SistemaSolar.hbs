@@ -13,27 +13,7 @@
 <body>
     
 
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Sistema Solar</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="/" onclick="seleccionar()"><i class="fa-solid fa-house"></i></a></li>
-                    <!--<li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>-->
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
-
+    {{>header}}
 
 
 
@@ -55,6 +35,7 @@
 
     <div class="tituloP">
         <h2>Sistema Solar</h2>
+        <img src="./IMG/logo.ico" alt="" width="60px" height="60px">
     </div>
 
         <div class="definicion">
@@ -130,6 +111,6 @@
         </div>
     </div>
 </section>
-
+    {{> footer}}
 </body>
 </html>

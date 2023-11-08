@@ -13,29 +13,7 @@
 <body>
     
 
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Compilador</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="/" onclick="seleccionar()"><i class="fa-solid fa-house"></i></a></li>
-                    <!--<li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>-->
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-
-   
-    </div>
-
+{{>header}}
 
 
 
@@ -132,6 +110,6 @@
         </div>
     </div>
 </section>
-
+{{> footer}}
 </body>
 </html>

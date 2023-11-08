@@ -1,20 +1,22 @@
 <div class="contenedor-header">
+    <link rel="stylesheet" href="/public/CSS/estilos.css">
         <header>
             <div class="logo">
-                <a href="#">Ever</a>
+                <a href="#">{{titulo}}</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="/#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="/#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="/#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="/#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="/#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    {{!-- <li><a href="/#contacto" onclick="seleccionar()">CONTACTO</a></li> --}}
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
+            <script src="JS/script.js"></script>
     </div>
