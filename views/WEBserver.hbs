@@ -11,26 +11,10 @@
     <link rel="stylesheet" href="./CSS/estiloProyecto.css">
 </head>
 <body>
+
     
-
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">WEB server</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="/" onclick="seleccionar()"><i class="fa-solid fa-house"></i></a></li>
-                   
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
-
-
+    
+{{>header}}
 
 
 
@@ -128,6 +112,6 @@
         </div>
     </div>
 </section>
-
+{{> footer}}
 </body>
 </html>

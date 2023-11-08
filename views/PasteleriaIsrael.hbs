@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>{{titulo}}</title>
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/estiloProyecto.css">
+</head>
+<body>
+    
+
+{{>header}}
+
+
+
+
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <br>
+        <br>
+
+
+        <div class="git">
+        <a href="https://github.com/orgs/UMG-Pasteleria/repositories">
+            <img src="./IMG/github.png" class="gitimg" alt="">
+            
+        </a>
+        
+    </div>
+
+    <div class="tituloP">
+        <h2>Sistema de gestion de pedido de la Pasteleria Israel</h2> 
+        {{!-- <img src="./IMG/MongoDB1.png" alt="" width="50px" height="60px"> --}}
+    </div>
+
+        <div class="definicion">
+            <span>Este proyecto consiste en la gestion de pedidos de la Pasteleria Israel, ya qu dicho negocio tiene dificultades con la gestion de pedidos de sus pasteles debido a la alta demanda de pasteles en dias festivos</span>
+        </div>
+        <div class="galeria">
+
+             
+                <div class="proyecto">
+               <img src="./IMG/P8/01.png"  alt="">
+              <div class="descripcion">
+                    <h3>Pagina Web</h3>
+                    <p>al ingresar a la direccion de la pagina web, se muestra una pequeña descripcion del negocio</p>
+                    </p>
+                </div>
+            </div>
+        
+
+
+
+             <div class="proyecto">
+                <img src="./IMG/P8/02.png"  alt="">
+               <div class="descripcion">
+                     <h3>Iniciar sesion</h3>
+                     <p>Para ingresar al sistema se debe iniciar sesion</p>
+                 </div>
+             </div>
+
+
+
+             <div class="proyecto">
+                <img src="./IMG/P8/03.png"  alt="">
+               <div class="descripcion">
+                     <h3>Pagina de inicio</h3>
+                     <p>Una vez iniciado sesion se muestra la pagina de inicio con una pequña grafica con los datos de las ventas realizadas</p>
+                 </div>
+             </div>
+
+
+             <div class="proyecto">
+                <img src="./IMG/P8/04.png"  alt="">
+               <div class="descripcion">
+                     <h3>Modulo de pedidos</h3>
+                     <p>En este modulo visualizan y se realizan todos los pedidos</p>
+                 </div>
+             </div>
+
+             <div class="proyecto">
+                <img src="./IMG/P8/05.png"  alt="">
+               <div class="descripcion">
+                     <h3>Agregar un nuevo pedido</h3>
+                     <p>Al hacer click en el boton de agregar nuevo pedido, se abrira un modal en la cual se puede ingresar los datos del nuevo pedido que se desea realizar</p>
+                 </div>
+             </div>
+
+
+
+             <div class="proyecto">
+                <img src="./IMG/P8/06.png"  alt="">
+               <div class="descripcion">
+                     <h3>Agregar nuevo cliente desde pedidos</h3>
+                     <p>En el modal de pedidos se puede ingresar un nuevo cliente haciendo click en el boton de agregar nuevo cliente</p>
+                 </div>
+             </div>
+         
+         
+             <div class="proyecto">
+                <img src="./IMG/P8/07.png"  alt="">
+               <div class="descripcion">
+                     <h3>Generar PDF de los pedidos</h3>
+                     <p>Al hacer click el el boton de imprimir, se genera un archivo PDF con una lista de pedidos ordenados en filas </p>
+                 </div>
+             </div>
+         
+             <div class="proyecto">
+                <img src="./IMG/P8/08.png"  alt="">
+               <div class="descripcion">
+                     <h3>Version movil de modulo de pedidos</h3>
+                     <p>SE muestra una version movil del modulo de pedidos en la cual se ordenan por filas y contiene informacin necesaria de los pedidos</p>
+                 </div>
+             </div>
+         
+             <div class="proyecto">
+                <img src="./IMG/P8/09.png"  alt="">
+               <div class="descripcion">
+                     <h3>Version movil de pagina de inicio</h3>
+                     <p>Se mustra una version movil de la pagina de inicio despues de haber iniciado sesion</p>
+                 </div>
+             </div>
+
+
+        </div>
+    </div>
+</section>
+{{> footer}}
+</body>
+</html>

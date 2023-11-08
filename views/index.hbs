@@ -91,10 +91,10 @@
                                     Santiago Atitlán, Sololá
                                 </li>
                                 
-                                <li>
+                                {{!-- <li>
                                     <strong>Telefono</strong>
                                     +502 4716 3611
-                                </li>
+                                </li> --}}
                                 <li>
                                     <strong>Email</strong>
                                     eramiezq2@miumg.edu.gt
@@ -106,35 +106,40 @@
                     <dvi class="col">
                             <h3>Intereses</h3>
                             <div class="contenedor-intereses">
-                                
+                                <a class="a" href="/Intereses#Fotografia" onclick="seleccionar()">
                                 <div class="interes">
                                     <i class="fa-solid fa-camera"></i>
                                     <span>Fotografia</span>
-                                </div>
-
+                                </div></a>
+                        
+                                <a class="a" href="/Intereses#Senderismo" onclick="seleccionar()">
                                 <div class="interes">
                                     <i class="fa-solid fa-person-hiking"></i>
                                     <span>Senderismo</span>
-                                </div>
+                                </div></a>
 
+
+                                <a class="a" href="/Intereses#Camping" onclick="seleccionar()">
                                 <div class="interes">
                                     <i class="fa-solid fa-campground"></i>
                                     <span>Camping</span>
                                 </div>
-                                
+                                </a>
+
+                                <a class="a" href="/Intereses#Astronomia" onclick="seleccionar()" >
                                 <div class="interes">
                                     <i class="fa-solid fa-moon"></i>
                                     <span>Astronomía</span>
-                                </div>
+                                </div></a>
                             </div>
                     </dvi>
                  </div>
                  <br>
                  <br><br>
-                 <button>
+                 {{!-- <button>
                     Descargar CV <i class="fa-solid fa-download"></i>
                     <span class="overlay"></span>
-                 </button>
+                 </button> --}}
         </div>
     </section>
 
@@ -147,13 +152,13 @@
             <div class="fila">
                 <!-- Technical Skill -->
                 <div class="col">
-                    <h3>Habilidades Tecnicas</h3>
+                    <h3>Lenguajes de progamación </h3>
 
                     <div class="skill">
                         <span>C++</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>70%</span>
+                                <span>60%</span>
                             </div>
                         </div>
                     </div>
@@ -173,7 +178,7 @@
                         <span>HTML & CSS</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>45%</span>
+                                <span>75%</span>
                             </div>
                         </div>
                     </div>
@@ -183,7 +188,7 @@
                         <span>Javascript</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>40%</span>
+                                <span>70%</span>
                             </div>
                         </div>
                     </div>
@@ -202,21 +207,21 @@
 
                 <!-- Professional Skills -->
                 <div class="col">
-                    <h3>Habilidades profesionales</h3>
+                    <h3>Tecnologías de información</h3>
 
 
                     <div class="skill">
-                        <span>Creatividad</span>
+                        <span>React</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>85%</span>
+                                <span>65%</span>
                             </div>
                         </div>
                     </div>
 
 
                     <div class="skill">
-                        <span>Comunicación</span>
+                        <span>PostgreSQL</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>70%</span>
@@ -226,7 +231,7 @@
 
 
                     <div class="skill">
-                        <span>Trabajo en Equipo</span>
+                        <span>Git</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>70%</span>
@@ -236,20 +241,20 @@
 
 
                     <div class="skill">
-                        <span>Dedicación</span>
+                        <span>Figma</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>90%</span>
+                                <span>80%</span>
                             </div>
                         </div>
                     </div>
 
 
                     <div class="skill">
-                        <span>Liderazgo</span>
+                        <span>Cisco Packet Tracer</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>80%</span>
+                                <span>60%</span>
                             </div>
                         </div>
                     </div>
@@ -420,13 +425,35 @@
                     </div>
                 </div>
             </a>
+
+
+            <a href="/MongoDB">
+                <div class="proyecto">
+                    <img src="./IMG/P7/01.png" alt="">
+                    <div class="overlay">
+                        <h3>MongoDB</h3>
+                        <p>NodeJS y MongoDB</p>
+                    </div>
+                </div>
+            </a>
+      
+      
+            <a href="/PasteleriaIsrael">
+                <div class="proyecto">
+                    <img src="./IMG/PasteleriaIsrael.png" alt="">
+                    <div class="overlay">
+                        <h3>MongoDB</h3>
+                        <p>NodeJS y MongoDB</p>
+                    </div>
+                </div>
+            </a>
                 
             </div>
         </div>
     </section>
 
     <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
+    {{!-- <section id="contacto" class="contacto">
         <div class="contenido-seccion">
             <h2>CONTACTO</h2>
             <div class="fila">
@@ -464,9 +491,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- footer -->
-    {{>footer}}
+    {{> footer}}
 </body>
 </html>

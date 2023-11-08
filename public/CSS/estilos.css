@@ -132,6 +132,8 @@ font-weight: 400;
 line-height: normal;
 margin:auto;
 -webkit-text-stroke: 2px #fff;
+cursor: default;
+
 @media screen and (max-width: 950px) {
     font-size: 100px;
     transition: .5s;
@@ -264,6 +266,18 @@ margin:auto;
 .sobremi .fila .col .contenedor-intereses{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sobremi .fila .col .contenedor-intereses a{
+border: none !important;
+text-decoration: none !important;
+background-color: transparent;
+
+}
+.sobremi .fila .col .contenedor-intereses a:hover {
+    text-decoration: none !important;
+    color: #fff;
 }
 
 .sobremi .fila .col .contenedor-intereses .interes{
@@ -278,19 +292,36 @@ margin:auto;
     align-items: center;
     justify-content: center;
     transition: .3s;
+    cursor: pointer;
+    color: #FFFF;
 }
 
-.sobremi .fila .col .contenedor-intereses :hover{
+.sobremi .fila .col .contenedor-intereses  .interes:hover{
     background-color: #000;
-    
     border: 6px solid rgb(225, 255, 255);
     box-shadow: 0 0 5px #0FF, 0 0 20px #0FF;
-    transition: .3s;
+    transition: .3s all ease-in-out;
     text-shadow:  0 0 5px #0FF, 0 0 15px #0FF,0 0 30px #0FF,0 0 50px #0FF;
+    cursor: pointer;
 }
-.sobremi .fila .col .contenedor-intereses .interes i{
+.sobremi .fila .col .contenedor-intereses .interes span:hover {
+ 
+font-size: 20px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: transparent;
+
+}
+.sobremi .fila .col .contenedor-intereses .interes span {
+font-size: 20px;
+    margin-bottom: 10px;
+    border: none;
+}
+.sobremi .fila .col .contenedor-intereses .interes i {
     font-size: 30px;
     margin-bottom: 10px;
+    border: none;
+ 
 }
 
 .sobremi button{
@@ -411,7 +442,7 @@ font-weight: bold;
 }
 @keyframes cplus {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 60%;}
 }
 
 
@@ -429,7 +460,7 @@ font-weight: bold;
 }
 @keyframes htmlcss {
     0%{width: 0%;}
-    100%{width: 45%;}
+    100%{width: 75%;}
 }
 
 
@@ -439,7 +470,7 @@ font-weight: bold;
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 40%;}
+    100%{width: 70%;}
 }
 
 .skills .skill .oracle{
@@ -451,49 +482,49 @@ font-weight: bold;
     100%{width: 55%;}
 }
 
-.skills .skill .comunicacion{
+.skills .skill .PostgreSQL{
     width: 0%;
-    animation: 2s comunicacion forwards;
+    animation: 2s PostgreSQL forwards;
 }
-@keyframes comunicacion {
+@keyframes PostgreSQL {
     0%{width: 0%;}
     100%{width: 70%;}
 }
 
-.skills .skill .trabajo{
+.skills .skill .Git{
     width: 0%;
-    animation: 2s trabajo forwards;
+    animation: 2s Git forwards;
 }
-@keyframes trabajo {
+@keyframes Git {
     0%{width: 0%;}
     100%{width: 70%;}
 }
 
-.skills .skill .creatividad{
+.skills .skill .React{
     width: 0%;
-    animation: 2s creatividad forwards;
+    animation: 2s React forwards;
 }
-@keyframes creatividad {
+@keyframes React {
     0%{width: 0%;}
-    100%{width: 85%;}
+    100%{width: 65%;}
 }
 
-.skills .skill .dedicacion{
+.skills .skill .Figma{
     width: 0%;
-    animation: 2s dedicacion forwards;
+    animation: 2s Figma forwards;
 }
-@keyframes dedicacion {
-    0%{width: 0%;}
-    100%{width: 90%;}
-}
-
-.skills .skill .liderazgo{
-    width: 0%;
-    animation: 2s liderazgo forwards;
-}
-@keyframes liderazgo {
+@keyframes Figma {
     0%{width: 0%;}
     100%{width: 80%;}
+}
+
+.skills .skill .Packet-Tracer{
+    width: 0%;
+    animation: 2s Packet-Tracer forwards;
+}
+@keyframes Packet-Tracer {
+    0%{width: 0%;}
+    100%{width: 60%;}
 }
 
 /* ------------------------------SECCION CURRICULUM ---------------------------------*/
@@ -751,7 +782,7 @@ font-weight: bold;
     margin-right: 20px;
 }
 footer{
-    background-color: #252A2E;
+    background-color: #1d2124;
     color: #fff;
     padding: 50px 0 30px 0;
     text-align: center;

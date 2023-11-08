@@ -1,6 +1,7 @@
 const express = require("express");
 const hbs = require("hbs");
 require("dotenv").config();
+const cors = require("cors");
 
 const app = express();
 const port = process.env.PORT;
@@ -19,13 +20,13 @@ app.get("/", (req, res) => {
 
 app.get("/ElRancho", (req, res) => {
   res.render("ElRancho", {
-    titulo: "ElRancho",
+    titulo: "El Rancho",
   });
 });
 
 app.get("/SistemaSolar", (req, res) => {
   res.render("SistemaSolar", {
-    titulo: "SistemaSolar",
+    titulo: "Sistema Solar",
   });
 });
 app.get("/Sysinfo", (req, res) => {
@@ -48,6 +49,26 @@ app.get("/WEBserver", (req, res) => {
     titulo: "WEBserver",
   });
 });
+app.get("/MongoDB", (req, res) => {
+  res.render("MongoDB", {
+    titulo: "MongoDB",
+  });
+});
+app.get("/PasteleriaIsrael", (req, res) => {
+  res.render("PasteleriaIsrael", {
+    titulo: "Pasteleria Israel",
+  });
+});
+app.get("/Intereses", (req, res) => {
+  res.render("Intereses", {
+    titulo: "Intereses",
+  });
+});
+app.get("*", (req, res) => {
+  res.render("404", {
+    titulo: "Not Found",
+  });
+});
 
 app.get("/ElRancho", (req, res) => {
   res.sendFile(__dirname + "/public/ElRancho");
@@ -62,6 +83,7 @@ app.get("/Compilador", (req, res) => {
   res.sendFile(__dirname + "/public/Copilador");
 });
 
+app.use(cors());
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });

@@ -13,25 +13,7 @@
 <body>
     
 
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Sysinfo</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="/" onclick="seleccionar()"><i class="fa-solid fa-house"></i></a></li>
-                   
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
-
-
-
+{{>header}}
 
 
 
@@ -51,6 +33,7 @@
 
     <div class="tituloP">
         <h2>Sysinfo</h2>
+        <img src="./IMG/LogoUMG.png" alt="" width="60px" height="60px">
     </div>
 
         <div class="definicion">
@@ -128,6 +111,6 @@
         </div>
     </div>
 </section>
-
+{{> footer}}
 </body>
 </html>
